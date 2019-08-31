@@ -1,0 +1,28 @@
+@import '../../../sass/abstracts/mixins';
+header{
+    background: #fff;
+    img{
+        width: 200px;
+        margin: 1rem 0 0  3rem;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    opacity: 0.9;
+    a{
+        color: rgba(0,0,0,.5);
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: bold;
+        line-height: 1.5;
+        @include on-event(){
+            color: rgba(0,0,0,.7);
+        }
+    }
+}

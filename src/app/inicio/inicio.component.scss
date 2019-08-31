@@ -1,0 +1,45 @@
+@import '../../../sass/abstracts/mixins';
+section {
+    margin-top: 10rem;
+    text-align: center;
+
+    h1 {
+        color: white;
+        font-size: 68px;
+        letter-spacing: 1px;
+        text-shadow: 3px 3px 32px black;
+    }
+
+    .display-5 {
+        color: ivory;
+        font-weight: lighter;
+        text-shadow: 1px 2px 8px black;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(245, 180, 14);
+        text-decoration: none;
+        background: rgb(245, 180, 14);
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 2%;
+        padding: 1.5rem 3rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        @include on-event(){
+            box-shadow: 0 0 0 2px #000, 0 0 0 3px rgb(245, 180, 14, 0.9);
+            color: rgba(0,0,0,.7);
+        }
+    }
+}

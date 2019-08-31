@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar{
+    h1{
+        margin: 0;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    a{
+        color: $white-color;
+        padding: 0.45rem;
+        margin: 0 0.25rem;
+        @include on-event {
+            color: $primary-color;
+        }
+    }
+}
+
+// https://www.youtube.com/watch?v=IFM9hbapeA0
